@@ -1,0 +1,95 @@
+body{
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+    /* para dimensiona-los, eu posso fazer assim:
+    grid-template: 100px 50px 100px 100px;
+    mas n eh o mais recomendavel 
+    
+    o melhor eh fazer:  */
+    grid-template-areas: 'header header header header' 
+                        'navbar navbar navbar navbar'
+                        'section section section aside'
+                        'fake fake fake fake'
+                        'footer footer footer footer';
+    grid-template-rows: 8vh 7vh 60vh 40vh 10vh;
+    grid-template-columns: 24vw 24vw 24vw 26.5vw;
+    margin: 0;
+}
+
+nav{
+    align-items: center;
+    background-color: aliceblue;
+    display: flex;
+    grid-area: navbar;
+    justify-content: flex-end;
+}
+
+nav a{
+    color: gray;
+    font-weight: lighter;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+header{
+    background-color: red;
+    display: flex;
+    grid-area: header;
+    justify-content: flex-start;
+}
+
+header img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+section{
+    background-color: rgb(114, 114, 114);
+    display: flex;
+    flex-direction: column;
+    /* quando vc usa o flex-direction, o align-items alinha na horizontal e o flex direction na vertical, mudando de função */
+    grid-area: section;
+    justify-content: center;
+}
+
+.teste p{
+    display: flex;
+    justify-content: center;
+}
+
+section div iframe{
+    width: 100%;
+}
+
+aside{
+    grid-area: aside;
+    background-color: orangered;
+}
+
+footer{
+    grid-area: footer;
+    background-color: bisque;
+}
+
+.fake{
+    grid-area: fake;
+    background-image: url('Imgs/Neymar.jpeg');
+}
+
+.fake p{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.teste{
+    font-size: 14pt;
+}
+
+.teste1{
+    font-size: 1.2rem;
+}
+
+.teste2{
+    font-size: 1.2rem;
+}

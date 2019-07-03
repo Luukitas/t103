@@ -1,0 +1,5 @@
+aside: é uma tag q consegue dividir p cetrinho no site, fica em canto do site, como se fosse um comentario do autor, etc;
+
+grid são divisões (busque por imgs, eh mais facil);
+
+grid garden: site do grid
